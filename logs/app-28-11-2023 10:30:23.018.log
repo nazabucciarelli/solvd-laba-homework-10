@@ -3,8 +3,8 @@
 2023-11-28 10:30:23,166 INFO c.s.h.Main [main] Insert two integer numbers
 2023-11-28 10:30:23,167 INFO c.s.h.Main [main] The result of the sum is 12
 2023-11-28 10:30:23,167 ERROR c.s.h.Main [main] Age cannot be negative
-com.solvd.homework9.exceptions.NegativeValueException: Age cannot be negative
-	at com.solvd.homework9.models.Person.setAge(Person.java:49) ~[classes/:?]
-	at com.solvd.homework9.Main.main(Main.java:115) [classes/:?]
+com.solvd.homework10.exceptions.NegativeValueException: Age cannot be negative
+	at com.solvd.homework10.models.Person.setAge(Person.java:49) ~[classes/:?]
+	at com.solvd.homework10.Main.main(Main.java:115) [classes/:?]
 2023-11-28 10:30:23,181 INFO c.s.h.Main [main] Current age of Louis is 40
 2023-11-28 10:30:23,201 INFO c.s.h.Main [main] There are 50 unique words.

@@ -1,32 +1,30 @@
-# 9th Homework of Java Test Automation Course - Solvd Laba
-This repository stores the 9th homework given by our mentor in the Java Test 
-Automation Course at Solvd Laba. It consists of implementing some functional 
-interfaces, that the java.util.function package gives us, with lambda functions.
-Moreover, we had to create three functional interfaces with generics, and 
-finally create five complex enums, with methods, fields and constructors.
+# 10th Homework of Java Test Automation Course - Solvd Laba
+This repository stores the 10th homework given by our mentor in the Java Test 
+Automation Course at Solvd Laba. It consists of using the Stream API in 
+different cases to get different results, and using Java reflection to get
+information about methods, fields, constructors and modifiers from classes.
 
 ## Explanation
 
-To accomplish the requirements of the homework, I've changed the lines 97 and
-103 from the Main class, which were using the enhanced for loop, now those
-lists are being iterated with the forEach method, passing as argument a lambda
-function that implements the Consumer functional interface. Moreover, almost
-at the end of the main method, I've implemented the Predicate, Function, Supplier
-and UnaryOperator functional interfaces with lambdas, using the Stream API in
-some cases. Finally, I've created three custom functional interfaces  with
-generics to implement them at the end of the main method (notice that they
-are in the functional_interface package) and also I've created enums with fields,
-methods and constructors (in the enums package).
+To accomplish the requirements of the homework, I've used the Stream API
+in the Lists that I had created in previous homeworks in the Main class,
+applying both terminal and non-terminal methods in them in order to get the 
+desired result. Then, I've used Java reflection to get the fields, constructors,
+methods, modifiers, return types and parameters types from the class Person. 
+Finally, I've instantiated an object from the class Bird and invoked a method
+using purely reflection.
 
 ## What did I learn?
 
-It was a rewarding homework, since I've learnt how the lambda expressions
-work and the useful they are to save lines of code. Also, I've known the
-most used functional interfaces that Java provides us as Predicate, UnaryOperator,
-Function or Consumer. Although I already had simple knowledge about enums, this
-time I've noticed that they can have methods and constructors. In other words,
-they are like regular classes with the difference that the instances are 
-pre-declared in the beginning of the enum declaration. 
+In this homework I've realized how many lines of code I can save using the
+Stream API instead of regular loops or classic Java tools. It was pretty 
+interesting to learn about some non-terminal methods like map(), flatMap(), 
+peek() or filter(), and terminal methods like count(), collect(), anyMatch()
+or allMatch(). These last ones are called terminal because they don't return
+a Stream, but they return other datatype that doesn't allow us to keep working
+with streams. Finally, regarding Java reflection, I was astonished about the
+amount of things that we can do with this tool, and it is quite interesting
+to know in order to learn deeply this great programming language.
 
 ## Technologies
 
