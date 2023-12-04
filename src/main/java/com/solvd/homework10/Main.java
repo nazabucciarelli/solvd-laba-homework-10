@@ -210,7 +210,7 @@ public class Main {
         LOGGER.info("The created habitat is called " +
                 iCreateInstance.getInstance().getName());
 
-        // Adding seven streaming operations
+        // Adding seven stream operations
 
         // 1st - Getting id of employees who their ages are over 25
         List<String> employeesId = administrationEmployees.stream()
@@ -272,15 +272,18 @@ public class Main {
 
         // Using reflection
         Class<Person> clazz = Person.class;
+
         LOGGER.info("Fields from the class " + clazz.getSimpleName() + " are:");
         for (Field f : clazz.getDeclaredFields()) {
             LOGGER.info(f.getType().getSimpleName() + " " + f.getName());
         }
+
         LOGGER.info("The constructors from the class " + clazz.getSimpleName() +
                 " are:");
         String constructorText = "";
         for (Constructor<?> c : clazz.getConstructors()) {
-            constructorText += "Name of constructor: " + c.getName() + " and the paremeter's types are:";
+            constructorText += "Name of constructor: " + c.getName() + " and" +
+                    " the paremeter's types are:";
             for (Parameter p : c.getParameters()) {
                 constructorText += p.getType().getSimpleName() + " ";
             }
